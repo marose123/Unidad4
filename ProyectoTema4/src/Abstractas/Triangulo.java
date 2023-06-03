@@ -1,0 +1,47 @@
+
+package Abstractas;
+
+public class Triangulo extends Figura{
+	
+	private int base,altura;
+
+	public Triangulo(String nom, String col, int base, int altura) {
+		super(nom, col);
+		this.base = base;
+		this.altura = altura;
+	}
+	private String color;
+	public int getBase() {
+		return base;
+	}
+
+	public void setBase(int base) {
+		this.base = base;
+	}
+
+	public int getAltura() {
+		return altura;
+	}
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public void setAltura(int altura) {
+		this.altura = altura;
+	}
+	
+	public double area() {
+		return(this.base*this.altura)/2;
+	}
+
+	@Override
+    public String toString() {
+        return "Triangulo [base=" + base + ", altura=" + altura + ", color=" + color + ", area=" + area() + "]";
+    }
+	
+	
+}
